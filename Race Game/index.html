@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		  <!-- Favicons -->
+		  <link href="https://gdurl.com/9S5r/" rel="icon">
+		  <link href="https://gdurl.com/05eD3/" rel="apple-touch-icon">
+		<title>Car Motion</title>
+		<script src='motion.js'></script>
+	</head>
+	<body style="background-image: linear-gradient(rgb(35, 28, 28),rgb(179, 148, 251)); height:fit-content;width: 50%;overflow: hidden;" onload='draw();'>
+		<div>
+			<canvas id="motion" width="1000px" height="1000px"></canvas>
+		</div>
+		<div style="position: absolute; top: 10px; left: 100px;" >
+			<form name='test'>
+				<label for='time'>Time:</label>
+				<input type="input" id='time' name='time' value="0" />
+				<br>
+				<input onclick="javascript:initCars(); startLoop();" type='button' id='loop' value='Start' />
+			</form>
+		</div>
+	</body>
+</html>
